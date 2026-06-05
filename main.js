@@ -251,6 +251,7 @@ function transformToServer(inSettings)
 var globalWindowFocus=true;
 var globalLoginUsername='';
 var globalLoginPassword='';
+var globalLoginServerUrl='';
 var isUserLogged=false;
 var isDelegationLoaded=false;
 var globalActiveApp='';
@@ -667,6 +668,7 @@ function login()
 	$('#LoginLoader').fadeTo(1200, 1, function(){
 		globalLoginUsername=$('#LoginPage').find('[data-type="system_username"]').val();
 		globalLoginPassword=$('#LoginPage').find('[data-type="system_password"]').val();
+		globalLoginServerUrl=$('#LoginPage').find('[data-type="system_serverurl"]').val();
 		loadConfig();
 	});
 }
@@ -694,6 +696,7 @@ function logout(forceLogout)
 	globalResourceIntervalID=null;
 	globalLoginUsername='';
 	globalLoginPassword='';
+	globalLoginServerUrl='';
 	globalXMLCache=null;
 	globalResourceNumber=0;
 	globalResourceNumberCount=0;
@@ -893,6 +896,8 @@ function loadConfig()
 				$('#Logout').css('display', 'block');
 			}
 
+			if(globalLoginServerUrl!='')
+				globalNetworkCheckSettings.href=globalLoginServerUrl;
 			netCheckAndCreateConfiguration(globalNetworkCheckSettings);
 			return true;
 		}

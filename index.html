@@ -82,6 +82,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 							<td data-size="login_input"><input data-type="system_password" type="password" name="password" class="fs" placeholder="Password" /></td>
 						</tr>
 						<tr>
+							<td data-size="login_input"><input data-type="system_serverurl" type="text" name="serverurl" class="fs" placeholder="Server URL (e.g. https://server.com/)" /></td>
+						</tr>
+						<tr>
 							<td data-size="login">
 								<select data-type="language" onchange="if($(this).val()!=''){globalInterfaceLanguage=$(this).find('option').filter(':selected').attr('data-type');resetSettings();if(isAvaible('CalDavZAP') && !isCalDAVLoaded)localizeCalDAV();if(isAvaible('CardDavMATE') && !isCardDAVLoaded)localizeCardDAV();if(isAvaible('Settings') && !isSettingsLoaded)localizeSettings();if(isAvaible('Projects') && !isProjectsLoaded)localizeProjects();}">
 									<option data-type=""> </option>

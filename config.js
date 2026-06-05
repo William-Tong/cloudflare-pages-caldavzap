@@ -337,7 +337,7 @@ var globalNetworkCheckSettings={
 	lockTimeOut: 10000,
 	checkContentType: true,
 	settingsAccount: true,
-	delegation: true,
+	delegation: false,
 	additionalResources: [],
 	hrefLabel: null,
 	forceReadOnly: null,
