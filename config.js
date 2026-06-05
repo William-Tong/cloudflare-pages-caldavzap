@@ -332,10 +332,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 // port, ... (client installed into Davical "htdocs" subdirectory;
 // works "out of the box", no additional setup required):
 var globalNetworkCheckSettings={
-	href: location.protocol+'//'+location.hostname+
-		(location.port ? ':'+location.port: '')+
-		location.pathname.replace(RegExp('/+[^/]+/*(index\.html)?$'),'')+
-		'/caldav.php/',
+	href: 'https://myfreebot.dpdns.org/',
 	timeOut: 90000,
 	lockTimeOut: 10000,
 	checkContentType: true,
