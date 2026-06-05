@@ -1,0 +1,5 @@
+/cache.manifest
+  Content-Type: text/cache-manifest
+
+/*
+  Cache-Control: max-age=0, must-revalidate, no-cache, no-transform, private
