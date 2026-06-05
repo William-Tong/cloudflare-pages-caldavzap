@@ -293,7 +293,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 //		lockTimeOut: 10000,
 //		checkContentType: true,
 //		settingsAccount: true,
-//		delegation: true,
+//		delegation: false,
 //		hrefLabel: null,
 //		forceReadOnly: null,
 //		ignoreAlarms: false,
